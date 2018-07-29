@@ -9,245 +9,217 @@ html, body {
   font-family: Oswald, sans-serif;
 }
 
-.navbar {
-  background: white;
-  padding: 0;
-}
-
-.navbar-toggle {
-  background: black;
-  color: white;
-  border-radius: 0;
-  padding: 1%;
-}
-
-.menu{
-  background: white;
-  padding: 0;
-  display: flex;
-  align-items: stretch;
-}
-
-.navbar-collapse {
+.navbar .container-fluid {
+  width: 85%;
   margin: 0 auto;
 }
 
-.navbar-inverse .navbar-nav li a {
-  color: black;
-}
-
-.navbar-inverse .navbar-nav li a:hover,
-.navbar-inverse .navbar-nav li a:focus {
-  background: black;
+.panel, .panel-default {
+  border-radius: 0;
 }
 
 .home, .education, .portfolio, .contact, .footer {
   margin: 0 auto;
   padding-top: 50px;
-  background: black;
-  position: relative;
+  background: #030303;
+  position: static;
   height: 100%;
 }
 
 .education, .portfolio, .contact {
-  background: white;
+  background: #fafafa;
+}
+
+.home .info{
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  color: #bebebe;
+  opacity: 0.8;
+}
+
+.education .edu {
+  margin: 0 auto;
+  margin-top: 2%;
+  padding: 2%;
+  width: 85%;
+  height: 42%;
+  background: lightgray;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.education .edu a {
+  text-decoration: none;
+  color: black;
 }
 
 .portfolio {
   font-family: 'open sans condensed',  sans-serif;
 }
 
-.footer {
-  padding: 5%;
-  height: 20%;
-  color: white;
-}
-
-.photo, .info{
-  margin-top: 12%;
-  padding-top: 2%;
-  float: left;
-  width: 35%;
-  height: 50%;
-}
-
-.photo {
-  margin-left: 16%;
-  background-position: center;
-  background-image: url("https://avatars2.githubusercontent.com/u/15342679?v=4&s=250");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.8;
-}
-
-.info {
-  margin-left: 1%;
-  color: white;
-}
-
-.barrier {
-  margin-left: 1%;
-  margin-top: 10%;
-  float: left;
-  height: 57%;
-  border-left: 1px solid white;
-}
-
-.edu {
+.portfolio .row {
+  width: 85%;
+  height: 100%;
   margin: 0 auto;
-  margin-top: 2%;
-  padding: 2%;
-  width: 70%;
-  height: 40%;
-  border-radius: 0;
-  background: lightgray;
-  color: black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.edu a {
-  text-decoration: none;
-  color: black;
-}
-
-.left-panel {
+.portfolio .leftpanel {
   height: 100%;
-  width: 70%;
-  float: left;
-  border-radius: 0;
-  box-shadow: -2px 0px 4px 0px rgba(0, 0, 0, 0.5), -6px 0px 10px 0px rgba(0, 0, 0, 0.19);
-}
-
-.right-panel {
-  height: 100%;
-  width: 30%;
-  float: left;
-  border-radius: 0;
-  box-shadow: -1px 0px 4px 0px rgba(0, 0, 0, 0.5), -6px 0px 10px 0px rgba(0, 0, 0, 0.19);
-}
-
-.leading {
-  height: 60%;
-  width: 100%;
-  float:left;
-  border-radius: 0;
-  margin:0;
-  padding: 1%;
-}
-
-.leading-snap {
-  height: 100%;
-  width: 60%;
-  float: left;
-  border-radius: 0;
-  background-position: center;
-  background-image: url("https://cdn.glitch.com/aa1f58fa-6cac-4f01-9f72-fdf6fa60b0a2%2Fpoll-maker.PNG?1506179111468");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.leading-text {
-  height: 100%;
-  width: 40%;
-  float: left;
-  font-size: 20px;
-  line-height: 25px;
-  margin-top: 5%;
-  padding: 30px;
-}
-
-.portfolios-list {
-  height: 100%;
-  width: 80%;
-  margin: 5%;
-  margin-top: 10%;
   padding: 0;
 }
 
-.collapse-list {
-  display: block;
-  border: none;
-  border-radius: 0;
-  list-style-type: none;
-  font-size: 20px;
-  padding:0;
+.portfolio .leftpanel .bigpanel {
+  height: 60%;
 }
 
-.collapse-list a {
-  color: black;
+.portfolio .leftpanel .bigpanel .panel, .portfolio .leftpanel .bigpanel .panel-default {
+  height: 100%;
 }
 
-.collapse-title {
-  font-size: 16px;
-  margin: 1%;
+.portfolio .leftpanel .bigpanel .panel .panel-heading {
+  padding: 1%;
+  height: 10%;
+  font-weight: bold;
 }
 
-.others {
-  height: 40%;
-  width: 100%;
+.portfolio .leftpanel .bigpanel .panel .panel-body {
+  padding: 0;
+  height: 90%;
+}
+
+.portfolio .leftpanel .bigpanel .panel .panel-body .leading-snap {
   float: left;
-  border-radius: 0;
+  width: 70%;
+  height: 100%;
+  background-image: url("https://cdn.glitch.com/aa1f58fa-6cac-4f01-9f72-fdf6fa60b0a2%2Fpoll-maker.PNG?1506179111468");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.portfolio .leftpanel .bigpanel .panel .panel-body .leading-text {
+  float: left;
+  width: 30%;
   padding: 1%;
 }
 
-.container-slide {
-  margin-top: 1%;
-  height: 100%;
-  width: 100%;
-  float: left;
-  border-radius: 0;
+.portfolio .leftpanel .bigpanel .panel .panel-body .leading-text a {
+  color: black;
 }
 
-.item, .item img {
-  float: left;
+.portfolio .leftpanel .row {
   width: 100%;
-  background: gray;
 }
 
-.item-text, .item-img {
-  float: left;
-  width: 40%;
+.portfolio .leftpanel .smallpanel {
+  height: 40%;
+}
+
+.portfolio .leftpanel .smallpanel .panel, .portfolio .leftpanel .smallpanel .panel-default {
   height: 100%;
 }
 
-.item-text {
-  float: left;
+.portfolio .leftpanel .smallpanel .panel .panel-heading {
+  padding: 1%;
+  height: 15%;
+  font-weight: bold;
+}
+
+.portfolio .leftpanel .smallpanel .panel .panel-body {
+  padding: 0;
+  height: 85%;
+}
+
+.portfolio .leftpanel .smallpanel .panel .panel-body .slide,
+.portfolio .leftpanel .smallpanel .panel .panel-body .carousel,
+.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner,
+.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item,
+.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-img,
+.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-text {
+  height: 100%;
+}
+
+.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-img {
   width: 60%;
-  padding: 5%;
-  color: white;
+  float: left;
 }
 
-.item-link {
-  border-radius: 0;
+.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-text {
+  width: 40%;
+  float: left;
+}
+
+.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-text .item-link {
+  width: 40%;
+  display: block;
   background: black;
   color: white;
+  border-radius: 0;
 }
 
-.item-link:hover, .item-link:focus, .item-link:visited {
-  color: white;
-  border: 1px solid black;
+.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-text .item-link:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.ribbon {
+.portfolio .rightpanel {
+  height: 100%;
+  padding: 0;
+}
+
+.portfolio .rightpanel .panel {
+  height: 100%;
+}
+
+.portfolio .rightpanel .panel .panel-body {
+  height: 100%;
+}
+
+.portfolio .rightpanel .panel .panel-body .collapse-title {
+  font-size: 1.4em;
+}
+
+.portfolio .rightpanel .panel .panel-body .collapse .collapse-list {
+  list-style-type: none;
+}
+
+.portfolio .rightpanel .panel .panel-body .collapse .collapse-list a {
+  color: black;
+  font-size: 1.2em;
+}
+
+.contact .ribbon {
   height: 40%;
   color: white;
-  padding: 1% 1%;
   background-image: url('https://cdn.glitch.com/aa1f58fa-6cac-4f01-9f72-fdf6fa60b0a2%2Fribbon.JPG?1506582099907');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border: 1px solid black;
 }
 
-.form-horizontal {
+.contact .ribbon h2 {
+  margin-left: 8.5%;
+}
+
+.contact .com {
+  width: 85%;
+  margin: 0 auto;
+  height: 60%;
+}
+
+.contact .com .com-items {
+  padding-top: 10%;
+}
+
+.contact .com .form-horizontal {
   float: left;
   width: 80%;
   margin: 0 auto;
   margin-top: 5%;
 }
 
-.loader {
+.contact .com .form-horizontal .form-group .loader {
   display: none;
   border: 2px solid black;
   border-radius: 50%;
@@ -270,23 +242,13 @@ html, body {
   100% { transform: rotate(360deg); }
 }
 
-.comm {
-  float: left;
-  width: 20%;
-  margin: 0 auto;
-  margin-top: 5%;
-}
-
-.comm-items {
-  margin: 5%;
-}
-
-.contact input, .contact textarea {
+.contact .com .form-horizontal .form-group input, 
+.contact .com .form-horizontal .form-group textarea {
   border-radius: 0;
   resize: none;
 }
 
-.form-group a {
+.contact .com .form-horizontal .form-group a {
   display: block;
   border-radius: 0;
   border: 1px solid black;
@@ -294,16 +256,25 @@ html, body {
   background: black;
 }
 
-.contact input:focus, .contact textarea:focus, .form-group a:hover {
+.contact .com .form-horizontal .form-group input:focus,
+.contact .com .form-horizontal .form-group textarea:focus,
+.contact .com .form-horizontal .form-group a:hover {
   border: 1px solid black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.form-group a:hover {
+.contact .com .form-horizontal .form-group a:hover {
   color: white;  
 }
 
-.icon-footer, .icon-contact {
+.footer {
+  padding: 5%;
+  height: 20%;
+  color: white;
+}
+
+.footer .icon-footer,
+.contact .icon-contact {
   width: 30px;
   height: 30px;
   border: 1px solid white;
@@ -315,18 +286,18 @@ html, body {
   color: black;
 }
 
-.icon-contact {
+.contact .icon-contact {
   background: black;
   color: white;
 }
 
-.icon-footer:hover {
+.footer .icon-footer:hover {
   background-color: lightgray;
   color: black;
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
-.icon-contact:hover {
+.contact .icon-contact:hover {
   background-color: lightgray;
   color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

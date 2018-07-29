@@ -5,7 +5,7 @@ var bodyParser = require("body-parser");
 var getIP = require('ipware')().get_ip;
 var app = express();
 
-mongoose.connect(process.env.MONGO_URI);
+mongoose.connect(process.env.MONGO_URI, {useMongoClient: true});
 mongoose.Promise = global.Promise;
 
 app.use(bodyParser.urlencoded({extended:false}));
@@ -24,18 +24,8 @@ app.route("/")
 
 app.route("/saveMessage")
     .post(function (req, res) {
-        var newGuest = new Guest();
-    	newGuest.ip = getIP(req).clientIp;
-    	newGuest.name = req.body.name;
-    	newGuest.email = req.body.email;
-    	newGuest.message = req.body.message;
-    	newGuest.date = Date.now();
-    	newGuest.save(function (err) {
-    		if (err) {
-    			res.send(err);
-    		} else {
-    		    res.send(newGuest);
-    		}
+    	Guest.SaveDoc(req, function (response) {
+    	    res.send(response);
     	});
     });
 
