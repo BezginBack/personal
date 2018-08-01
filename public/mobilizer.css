@@ -1,57 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
-@import url('https://fonts.googleapis.com/css?family=Oswald');
-
-html, body {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  height: 100%;
-  font-family: Oswald, sans-serif;
-}
 
 .navbar .container-fluid {
-  width: 85%;
-  margin: 0 auto;
-}
-
-.panel, .panel-default {
-  border-radius: 0;
-}
-
-.home, .education, .portfolio, .contact, .footer {
-  margin: 0 auto;
-  padding-top: 50px;
-  background: #030303;
-  position: static;
-  height: 100%;
-}
-
-.education, .portfolio, .contact {
-  background: #fafafa;
+  width: 95%;
 }
 
 .home .info{
-  width: 85%;
-  height: 100%;
-  margin: 0 auto;
-  color: #bebebe;
-  opacity: 0.8;
+  width: 95%;
 }
 
 .education .edu {
-  margin: 0 auto;
-  margin-top: 2%;
-  padding: 2%;
-  width: 85%;
-  height: 42%;
-  background: lightgray;
-  color: black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 95%;
+  height: 47%;
 }
 
-.education .edu a {
-  text-decoration: none;
-  color: black;
+.education .edu .panel-body {
+  padding: 1%;
 }
 
 .portfolio {
@@ -59,18 +21,17 @@ html, body {
 }
 
 .portfolio .row {
-  width: 85%;
-  height: 100%;
-  margin: 0 auto;
+  width: 95%;
 }
 
 .portfolio .leftpanel {
-  height: 100%;
-  padding: 0;
+  float: none;
+  height: 80%;
 }
 
 .portfolio .leftpanel .bigpanel {
-  height: 60%;
+  float: none;
+  height: 70%;
 }
 
 .portfolio .leftpanel .bigpanel .panel, .portfolio .leftpanel .bigpanel .panel-default {
@@ -78,29 +39,27 @@ html, body {
 }
 
 .portfolio .leftpanel .bigpanel .panel .panel-heading {
-  padding: 1%;
-  height: 10%;
-  font-weight: bold;
+  height: 6%;
+  font-size: 0.8em;
 }
 
 .portfolio .leftpanel .bigpanel .panel .panel-body {
   padding: 0;
-  height: 90%;
+  height: 94%;
+  font-size: 90%;
 }
 
 .portfolio .leftpanel .bigpanel .panel .panel-body .leading-snap {
-  float: left;
-  width: 70%;
-  height: 100%;
-  background-image: url("https://cdn.glitch.com/aa1f58fa-6cac-4f01-9f72-fdf6fa60b0a2%2Fpoll-maker.PNG?1506179111468");
-  background-size: cover;
-  background-repeat: no-repeat;
+  float: none;
+  width: 100%;
+  height: 50%;
 }
 
 .portfolio .leftpanel .bigpanel .panel .panel-body .leading-text {
-  float: left;
-  width: 30%;
-  padding: 1%;
+  float: none;
+  width: 100%;
+  font-size: 0.8em;
+  height: 50%;
 }
 
 .portfolio .leftpanel .bigpanel .panel .panel-body .leading-text a {
@@ -112,22 +71,24 @@ html, body {
 }
 
 .portfolio .leftpanel .smallpanel {
-  height: 40%;
+  float: none;
+  position: static;
+  height: 30%;
 }
 
 .portfolio .leftpanel .smallpanel .panel, .portfolio .leftpanel .smallpanel .panel-default {
   height: 100%;
+  font-size: 90%;
 }
 
 .portfolio .leftpanel .smallpanel .panel .panel-heading {
-  padding: 1%;
-  height: 15%;
-  font-weight: bold;
+  height: 12%;
+  font-size: 0.8em;
 }
 
 .portfolio .leftpanel .smallpanel .panel .panel-body {
-  padding: 0;
-  height: 85%;
+  height: 88%;
+  font-size: 70%;
 }
 
 .portfolio .leftpanel .smallpanel .panel .panel-body .slide,
@@ -144,17 +105,24 @@ html, body {
   float: left;
 }
 
+.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-img img{
+  width: 90%;
+  height: 100%;
+}
+
 .portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-text {
   width: 40%;
   float: left;
 }
 
+.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-tex h5 {
+  font-size: 70%;
+}
+
 .portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-text .item-link {
-  width: 40%;
-  display: block;
-  background: black;
-  color: white;
-  border-radius: 0;
+  width: 50%;
+  font-size: 70%;
+  padding: 1%;
 }
 
 .portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-text .item-link:hover {
@@ -162,29 +130,27 @@ html, body {
 }
 
 .portfolio .rightpanel {
-  height: 100%;
-  padding: 0;
-}
-
-.portfolio .rightpanel .panel {
-  height: 100%;
-}
-
-.portfolio .rightpanel .panel .panel-body {
-  height: 100%;
+  float: none;
+  height: 20%;
 }
 
 .portfolio .rightpanel .panel .panel-body .collapse-title {
-  font-size: 1.4em;
+  font-size: 1em;
+}
+
+.portfolio .rightpanel .panel .panel-body .collapse {
+  font-size: 1em;
 }
 
 .portfolio .rightpanel .panel .panel-body .collapse .collapse-list {
-  list-style-type: none;
+  padding: 1%;
+  display: block;
+  width: 100%;
 }
 
 .portfolio .rightpanel .panel .panel-body .collapse .collapse-list a {
   color: black;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .contact .ribbon {
