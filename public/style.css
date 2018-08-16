@@ -4,9 +4,25 @@
 html, body {
   margin: 0;
   padding: 0;
-  position: relative;
+  position: static;
   height: 100%;
   font-family: Oswald, sans-serif;
+}
+
+.text-xx-lg {
+ font-size: xx-large; 
+}
+
+.text-lg {
+ font-size: large; 
+}
+
+.text-md {
+ font-size: medium; 
+}
+
+.text-sm {
+ font-size: small; 
 }
 
 .navbar .container-fluid {
@@ -16,6 +32,7 @@ html, body {
 
 .panel, .panel-default {
   border-radius: 0;
+  margin-bottom: 0;
 }
 
 .home, .education, .portfolio, .contact, .footer {
@@ -34,6 +51,7 @@ html, body {
   width: 85%;
   height: 100%;
   margin: 0 auto;
+  background: #030303;
   color: #bebebe;
   opacity: 0.8;
 }
@@ -55,136 +73,153 @@ html, body {
 }
 
 .portfolio {
-  font-family: 'open sans condensed',  sans-serif;
+  font-family: "Open Sans Condensed";
+  height: 300%;
 }
 
-.portfolio .row {
+.portfolio .container {
   width: 85%;
-  height: 100%;
   margin: 0 auto;
-}
-
-.portfolio .leftpanel {
-  height: 100%;
   padding: 0;
-}
-
-.portfolio .leftpanel .bigpanel {
-  height: 60%;
-}
-
-.portfolio .leftpanel .bigpanel .panel, .portfolio .leftpanel .bigpanel .panel-default {
   height: 100%;
 }
 
-.portfolio .leftpanel .bigpanel .panel .panel-heading {
-  padding: 1%;
+.portfolio .container .top-text {
+  width: 100%;
+  margin: 0 auto;
   height: 10%;
-  font-weight: bold;
 }
 
-.portfolio .leftpanel .bigpanel .panel .panel-body {
+.portfolio .container .top-text .line{
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 2%;
+  height: 0;
+  border: 1px solid black;
+}
+
+.portfolio .container .mid-content {
+  width: 100%;
+  margin: 0 auto;
   padding: 0;
   height: 90%;
 }
 
-.portfolio .leftpanel .bigpanel .panel .panel-body .leading-snap {
-  float: left;
-  width: 70%;
-  height: 100%;
-  background-image: url("https://cdn.glitch.com/aa1f58fa-6cac-4f01-9f72-fdf6fa60b0a2%2Fpoll-maker.PNG?1506179111468");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.portfolio .leftpanel .bigpanel .panel .panel-body .leading-text {
-  float: left;
-  width: 30%;
-  padding: 1%;
-}
-
-.portfolio .leftpanel .bigpanel .panel .panel-body .leading-text a {
-  color: black;
-}
-
-.portfolio .leftpanel .row {
+.portfolio .container .mid-content .content-title {
   width: 100%;
+  margin: 0 auto;
+  height: 2%;
 }
 
-.portfolio .leftpanel .smallpanel {
-  height: 40%;
-}
-
-.portfolio .leftpanel .smallpanel .panel, .portfolio .leftpanel .smallpanel .panel-default {
-  height: 100%;
-}
-
-.portfolio .leftpanel .smallpanel .panel .panel-heading {
-  padding: 1%;
-  height: 15%;
-  font-weight: bold;
-}
-
-.portfolio .leftpanel .smallpanel .panel .panel-body {
+.portfolio .container .mid-content .content-holder {
+  width: 100%;
+  margin: 0 auto;
   padding: 0;
+  height: 18%;
+}
+
+.portfolio .container .mid-content .content-holder .item-n {
+  position: relative;
+  width: 25%;
   height: 85%;
-}
-
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide,
-.portfolio .leftpanel .smallpanel .panel .panel-body .carousel,
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner,
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item,
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-img,
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-text {
-  height: 100%;
-}
-
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-img {
-  width: 60%;
+  margin: 1%;
+  margin-left: 6%;
   float: left;
-}
-
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-text {
-  width: 40%;
-  float: left;
-}
-
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-text .item-link {
-  width: 40%;
-  display: block;
-  background: black;
-  color: white;
-  border-radius: 0;
-}
-
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-text .item-link:hover {
+  border: none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.portfolio .rightpanel {
-  height: 100%;
+.portfolio .container .mid-content .content-holder .item-n .panel-body {
+  width: 100%;
+  height: auto;
   padding: 0;
 }
 
-.portfolio .rightpanel .panel {
+.portfolio .container .mid-content .content-holder .item-n .panel-body img {
+  width: 100%;
+}
+
+.portfolio .container .mid-content .content-holder .item-n .panel-footer {
+  width: 100%;
+  height: auto;
+  padding: 2%;
+  background: white;
+}
+
+.portfolio .container .mid-content .content-holder .item-s .plate,
+.portfolio .container .mid-content .content-holder .item-n .plate {
+  position: absolute;
+  width: 100%;
   height: 100%;
+  transition: all .5s ease;
+  opacity:0;
+  transition: .9s;
+  background: lightblue;
 }
 
-.portfolio .rightpanel .panel .panel-body {
-  height: 100%;
+.portfolio .container .mid-content .content-holder .item-s .plate .link-holder,
+.portfolio .container .mid-content .content-holder .item-n .plate .link-holder {
+  position: relative;
+  width: auto;
+  height: auto;
+  top: 40%;
+  margin: 0 auto;
 }
 
-.portfolio .rightpanel .panel .panel-body .collapse-title {
-  font-size: 1.4em;
+.portfolio .container .mid-content .content-holder .item-s .plate .link-holder .col-xs-3,
+.portfolio .container .mid-content .content-holder .item-s .plate .link-holder .col-sm-5,
+.portfolio .container .mid-content .content-holder .item-n .plate .link-holder .col-xs-3,
+.portfolio .container .mid-content .content-holder .item-n .plate .link-holder .col-sm-4 {
+  padding: 0;
 }
 
-.portfolio .rightpanel .panel .panel-body .collapse .collapse-list {
-  list-style-type: none;
-}
-
-.portfolio .rightpanel .panel .panel-body .collapse .collapse-list a {
+.portfolio .container .mid-content .content-holder .item-s .plate .link-holder .item-link,
+.portfolio .container .mid-content .content-holder .item-n .plate .link-holder .item-link { 
+  background: orange;
   color: black;
-  font-size: 1.2em;
+  border-radius: 0;
+  width: auto;
+  font-weight: bold;
+}
+
+.portfolio .container .mid-content .content-holder .item-s .plate .item-link:hover,
+.portfolio .container .mid-content .content-holder .item-n .plate .item-link:hover {
+  background: orange;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.portfolio .container .mid-content .content-holder .item-s:hover .plate,
+.portfolio .container .mid-content .content-holder .item-n:hover .plate {
+  opacity: 0.7;
+}
+
+.portfolio .container .mid-content .content-holder .item-n .panel-footer .text-name,
+.portfolio .container .mid-content .content-holder .item-s .text-name {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid gray;
+}
+
+.portfolio .container .mid-content .content-holder .item-s {
+  position: relative;
+  width: 18%;
+  height: 80%;
+  margin: 1.5%;
+  margin-right: 0%;
+  float: left;
+  border: none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.portfolio .container .mid-content .content-holder .item-s .panel-body .body-holder {
+  width: auto;
+  margin-top: 25%;
+}
+
+.portfolio .container .mid-content .content-footer {
+  width: 100%;
+  margin: 0 auto;
+  height: 4%;
 }
 
 .contact .ribbon {
@@ -198,28 +233,32 @@ html, body {
   border: 1px solid black;
 }
 
-.contact .ribbon h2 {
+.contact .ribbon p {
+  font-size: xx-large;
   margin-left: 8.5%;
 }
 
-.contact .com {
+.contact .communicate {
   width: 85%;
   margin: 0 auto;
   height: 60%;
 }
 
-.contact .com .com-items {
-  padding-top: 10%;
-}
-
-.contact .com .form-horizontal {
+.contact .communicate .contact-info {
+  width: 30%;
+  height: 100%;
+  margin-top: 2%;
   float: left;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 5%;
 }
 
-.contact .com .form-horizontal .form-group .loader {
+.contact .communicate .contact-form {
+  width: 70%;
+  height: 100%;
+  margin-top: 2%;
+  float: left;
+}
+
+.contact .communicate .contact-form .form-horizontal .form-group .btn-send .loader {
   display: none;
   border: 2px solid black;
   border-radius: 50%;
@@ -242,13 +281,13 @@ html, body {
   100% { transform: rotate(360deg); }
 }
 
-.contact .com .form-horizontal .form-group input, 
-.contact .com .form-horizontal .form-group textarea {
+.contact .communicate .contact-form .form-horizontal .form-group input, 
+.contact .communicate .contact-form .form-horizontal .form-group textarea {
   border-radius: 0;
   resize: none;
 }
 
-.contact .com .form-horizontal .form-group a {
+.contact .communicate .contact-form .form-horizontal .form-group a {
   display: block;
   border-radius: 0;
   border: 1px solid black;
@@ -256,14 +295,14 @@ html, body {
   background: black;
 }
 
-.contact .com .form-horizontal .form-group input:focus,
-.contact .com .form-horizontal .form-group textarea:focus,
-.contact .com .form-horizontal .form-group a:hover {
+.contact .communicate .contact-form .form-horizontal .form-group input:focus,
+.contact .communicate .contact-form .form-horizontal .form-group textarea:focus,
+.contact .communicate .contact-form .form-horizontal .form-group a:hover {
   border: 1px solid black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.contact .com .form-horizontal .form-group a:hover {
+.contact .communicate .contact-form .form-horizontal .form-group a:hover {
   color: white;  
 }
 
@@ -274,7 +313,7 @@ html, body {
 }
 
 .footer .icon-footer,
-.contact .icon-contact {
+.contact .communicate .icon-contact {
   width: 30px;
   height: 30px;
   border: 1px solid white;
@@ -286,7 +325,7 @@ html, body {
   color: black;
 }
 
-.contact .icon-contact {
+.contact .communicate .icon-contact {
   background: black;
   color: white;
 }
@@ -297,7 +336,7 @@ html, body {
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
-.contact .icon-contact:hover {
+.contact .communicate .icon-contact:hover {
   background-color: lightgray;
   color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

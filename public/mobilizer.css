@@ -3,234 +3,97 @@
   width: 95%;
 }
 
+.home, .education, .portfolio, .contact, .footer {
+  height: auto;
+}
+
 .home .info{
   width: 95%;
+  height: auto;
 }
 
 .education .edu {
   width: 95%;
-  height: 47%;
+  height: auto;
+  margin-bottom: 2%;
 }
 
 .education .edu .panel-body {
   padding: 1%;
 }
 
-.portfolio {
-  font-family: 'open sans condensed',  sans-serif;
-}
-
-.portfolio .row {
-  width: 95%;
-}
-
-.portfolio .leftpanel {
-  float: none;
-  height: 80%;
-}
-
-.portfolio .leftpanel .bigpanel {
-  float: none;
-  height: 70%;
-}
-
-.portfolio .leftpanel .bigpanel .panel, .portfolio .leftpanel .bigpanel .panel-default {
-  height: 100%;
-}
-
-.portfolio .leftpanel .bigpanel .panel .panel-heading {
-  height: 6%;
-  font-size: 0.8em;
-}
-
-.portfolio .leftpanel .bigpanel .panel .panel-body {
+.portfolio, .portfolio .row {
+  width: 100%;
   padding: 0;
-  height: 94%;
-  font-size: 90%;
 }
 
-.portfolio .leftpanel .bigpanel .panel .panel-body .leading-snap {
-  float: none;
+.portfolio {
+  padding-top: 50px;
+}
+
+.portfolio .container .mid-content {
   width: 100%;
-  height: 50%;
-}
-
-.portfolio .leftpanel .bigpanel .panel .panel-body .leading-text {
-  float: none;
-  width: 100%;
-  font-size: 0.8em;
-  height: 50%;
-}
-
-.portfolio .leftpanel .bigpanel .panel .panel-body .leading-text a {
-  color: black;
-}
-
-.portfolio .leftpanel .row {
-  width: 100%;
-}
-
-.portfolio .leftpanel .smallpanel {
-  float: none;
-  position: static;
-  height: 30%;
-}
-
-.portfolio .leftpanel .smallpanel .panel, .portfolio .leftpanel .smallpanel .panel-default {
-  height: 100%;
-  font-size: 90%;
-}
-
-.portfolio .leftpanel .smallpanel .panel .panel-heading {
-  height: 12%;
-  font-size: 0.8em;
-}
-
-.portfolio .leftpanel .smallpanel .panel .panel-body {
-  height: 88%;
-  font-size: 70%;
-}
-
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide,
-.portfolio .leftpanel .smallpanel .panel .panel-body .carousel,
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner,
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item,
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-img,
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-text {
-  height: 100%;
-}
-
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-img {
-  width: 60%;
-  float: left;
-}
-
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-img img{
-  width: 90%;
-  height: 100%;
-}
-
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-text {
-  width: 40%;
-  float: left;
-}
-
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-tex h5 {
-  font-size: 70%;
-}
-
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-text .item-link {
-  width: 50%;
-  font-size: 70%;
-  padding: 1%;
-}
-
-.portfolio .leftpanel .smallpanel .panel .panel-body .slide .carousel-inner .item .item-text .item-link:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.portfolio .rightpanel {
-  float: none;
-  height: 20%;
-}
-
-.portfolio .rightpanel .panel .panel-body .collapse-title {
-  font-size: 1em;
-}
-
-.portfolio .rightpanel .panel .panel-body .collapse {
-  font-size: 1em;
-}
-
-.portfolio .rightpanel .panel .panel-body .collapse .collapse-list {
-  padding: 1%;
-  display: block;
-  width: 100%;
-}
-
-.portfolio .rightpanel .panel .panel-body .collapse .collapse-list a {
-  color: black;
-  font-size: 1em;
-}
-
-.contact .ribbon {
-  height: 40%;
-  color: white;
-  background-image: url('https://cdn.glitch.com/aa1f58fa-6cac-4f01-9f72-fdf6fa60b0a2%2Fribbon.JPG?1506582099907');
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border: 1px solid black;
-}
-
-.contact .ribbon h2 {
-  margin-left: 8.5%;
-}
-
-.contact .com {
-  width: 85%;
   margin: 0 auto;
-  height: 60%;
 }
 
-.contact .com .com-items {
-  padding-top: 10%;
+.portfolio .container .mid-content .content-holder .item-n {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 4%;
+  height: auto;
+  float: none;
+  font-size: medium;
 }
 
-.contact .com .form-horizontal {
-  float: left;
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 5%;
+.portfolio .container .mid-content .content-holder .item-n .panel-body {
+  width: 100%;
+  height: auto;
+  padding: 0;
 }
 
-.contact .com .form-horizontal .form-group .loader {
-  display: none;
-  border: 2px solid black;
-  border-radius: 50%;
-  border-bottom: 2px solid white;
-  border-top: 2px solid white;
-  width: 20px;
-  height: 20px;
-  margin-left: 48%;
-  -webkit-animation: spin 1.5s linear infinite;
-  animation: spin 1.5s linear infinite;
+.portfolio .container .mid-content .content-holder .item-n .panel-body img {
+  width: 100%;
 }
 
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+.portfolio .container .mid-content .content-holder .item-n .panel-footer {
+  width: 100%;
+  height: auto;
+  padding: 2%;
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+.portfolio .container .mid-content .content-holder .item-s {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 4%;
+  height: auto;
+  float: none;
+  padding-bottom: 7%;
+  font-size: large;
 }
 
-.contact .com .form-horizontal .form-group input, 
-.contact .com .form-horizontal .form-group textarea {
-  border-radius: 0;
-  resize: none;
+.portfolio .container .mid-content .content-holder .item-s .panel-body .body-holder {
+  margin-top: 20%;
+  margin-bottom: 20%;
 }
 
-.contact .com .form-horizontal .form-group a {
-  display: block;
-  border-radius: 0;
-  border: 1px solid black;
-  color: white;
-  background: black;
+.portfolio .container .mid-content .content-footer {
+  padding: 4%;
 }
 
-.contact .com .form-horizontal .form-group input:focus,
-.contact .com .form-horizontal .form-group textarea:focus,
-.contact .com .form-horizontal .form-group a:hover {
-  border: 1px solid black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.portfolio .container .mid-content .content-footer p {
+  font-size: small;
 }
 
-.contact .com .form-horizontal .form-group a:hover {
-  color: white;  
+.contact .communicate {
+  width: 100%;
+}
+
+.contact .communicate .contact-info,
+.contact .communicate .contact-form {
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+  float: none;
 }
 
 .footer {
