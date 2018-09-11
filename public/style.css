@@ -95,7 +95,7 @@ html, body {
   margin: 0 auto;
   margin-top: 2%;
   height: 0;
-  border: 1px solid black;
+  border: 1px solid #FF6037;
 }
 
 .portfolio .container .mid-content {
