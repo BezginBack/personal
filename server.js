@@ -34,7 +34,7 @@ app.use(function(req, res, next){
 });
 
 app.listen(process.env.PORT, function () {
-    var date = new Date(Date.now());
+  var date = new Date(Date.now());
 	var time = date.toLocaleTimeString('en-US', { hour12: false });
 	var day = date.toDateString();
     console.log('Server listening :\n', 'Port:', process.env.PORT, 'Time :', day + ' ' + time);
