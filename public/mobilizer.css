@@ -1,0 +1,133 @@
+
+.navbar .container-fluid {
+  width: 95%;
+}
+
+.home, .education, .portfolio, .contact, .footer {
+  height: auto;
+}
+
+.home .info{
+  width: 95%;
+  height: auto;
+}
+
+.education .edu {
+  width: 95%;
+  height: auto;
+  margin-bottom: 2%;
+}
+
+.education .edu .panel-body {
+  padding: 1%;
+}
+
+.portfolio, .portfolio .row {
+  width: 100%;
+  padding: 0;
+}
+
+.portfolio {
+  padding-top: 50px;
+}
+
+.portfolio .container .mid-content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.portfolio .container .mid-content .content-holder .item-n {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 4%;
+  height: auto;
+  float: none;
+  font-size: medium;
+}
+
+.portfolio .container .mid-content .content-holder .item-n .panel-body {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.portfolio .container .mid-content .content-holder .item-n .panel-body img {
+  width: 100%;
+}
+
+.portfolio .container .mid-content .content-holder .item-n .panel-footer {
+  width: 100%;
+  height: auto;
+  padding: 2%;
+}
+
+.portfolio .container .mid-content .content-holder .item-s {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 4%;
+  height: auto;
+  float: none;
+  padding-bottom: 7%;
+  font-size: large;
+}
+
+.portfolio .container .mid-content .content-holder .item-s .panel-body .body-holder {
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+.portfolio .container .mid-content .content-footer {
+  padding: 4%;
+}
+
+.portfolio .container .mid-content .content-footer p {
+  font-size: small;
+}
+
+.contact .communicate {
+  width: 100%;
+}
+
+.contact .communicate .contact-info,
+.contact .communicate .contact-form {
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+  float: none;
+}
+
+.footer {
+  padding: 5%;
+  height: 20%;
+  color: white;
+}
+
+.footer .icon-footer,
+.contact .icon-contact {
+  width: 30px;
+  height: 30px;
+  border: 1px solid white;
+  padding: 0.7%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background: white;
+  color: black;
+}
+
+.contact .icon-contact {
+  background: black;
+  color: white;
+}
+
+.footer .icon-footer:hover {
+  background-color: lightgray;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.contact .icon-contact:hover {
+  background-color: lightgray;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
