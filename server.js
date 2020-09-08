@@ -6,7 +6,8 @@ var getIP = require('ipware')().get_ip;
 var app = express();
 
 mongoose.connect(process.env.MONGO_URI, {useMongoClient: true, useUnifiedTopology: true});
-mongoose.Promise = global.Promise;
+mongoose.Promise = global.Promise;  
+
   
 
 app.use(bodyParser.urlencoded({extended:false}));
