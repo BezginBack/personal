@@ -5,8 +5,9 @@ var bodyParser = require("body-parser");
 var getIP = require('ipware')().get_ip;
 var app = express();
 
-mongoose.connect(process.env.MONGO_URI, {useMongoClient: true});
+mongoose.connect(process.env.MONGO_URI, {useMongoClient: true, useUnifiedTopology: true});
 mongoose.Promise = global.Promise;
+  
 
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
