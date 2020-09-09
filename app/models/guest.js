@@ -34,7 +34,7 @@ exports.SaveDoc = function(req, call){
 		if (err) {
 			call(err);
 		} else {
-		    call(newGuest);
+		  call(newGuest);
 		}
 	});
 };
