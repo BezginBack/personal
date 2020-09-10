@@ -8,7 +8,9 @@ var app = express();
 //mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true});
 //mongoose.Promise = global.Promise;  
 
-mongoose.connect(process.env.MONGO_URI, {useMongoClient: true, useUnifiedTopology: true}).catch(function (reason) {
+
+
+mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true}).catch(function (reason) {
   console.log('Unable to connect to the mongodb instance. Error: ', reason);
 });
 
