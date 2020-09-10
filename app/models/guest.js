@@ -38,7 +38,3 @@ exports.SaveDoc = function(req, call){
 		}
 	});
 };
-
-//module.exports = mongoose.model('Guest', Guest);
-
-

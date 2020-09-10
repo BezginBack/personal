@@ -5,15 +5,10 @@ var bodyParser = require("body-parser");
 var getIP = require('ipware')().get_ip;
 var app = express();
 
-//mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true});
-//mongoose.Promise = global.Promise;  
-
-
 
 mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true, useUnifiedTopology: true}).catch(function (reason) {
   console.log('Unable to connect to the mongodb instance. Error: ', reason);
 });
-
 
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
@@ -45,5 +40,4 @@ app.listen(process.env.PORT, function () {
 	var time = date.toLocaleTimeString('en-US', { hour12: false });
 	var day = date.toDateString();
     console.log('Server listening :\n', 'Port:', process.env.PORT, 'Time :', day + ' ' + time);
-    onsole.log()
 });
