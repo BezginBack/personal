@@ -5,13 +5,13 @@ var bodyParser = require("body-parser");
 var getIP = require('ipware')().get_ip;
 var app = express();
 
-mongoose.connect(process.env.MONGO_URI, {useMongoClient: true, useUnifiedTopology: true});
+//mongoose.connect(process.env.MONGO_URI, {useNewUrlParser: true});
 //mongoose.Promise = global.Promise;  
 
-//mongoose.connect(process.env.MONGO_URI, {useMongoClient: true, useUnifiedTopology: true}).catch(function (reason) {
-  //console.log('Unable to connect to the mongodb instance. Error: ', reason);
-//});
-  
+mongoose.connect(process.env.MONGO_URI, {useMongoClient: true, useUnifiedTopology: true}).catch(function (reason) {
+  console.log('Unable to connect to the mongodb instance. Error: ', reason);
+});
+
 
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
