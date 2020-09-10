@@ -45,4 +45,5 @@ app.listen(process.env.PORT, function () {
 	var time = date.toLocaleTimeString('en-US', { hour12: false });
 	var day = date.toDateString();
     console.log('Server listening :\n', 'Port:', process.env.PORT, 'Time :', day + ' ' + time);
+    onsole.log()
 });
